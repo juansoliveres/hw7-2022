@@ -61,6 +61,7 @@ var slider = document.querySelector('#slider')
 document.querySelector("#slider").addEventListener("click", function() {
 video.volume = slider.value / 100
 console.log('The current value is: ' + video.volume);
+document.querySelector("#volume").innerHTML = video.volume * 100 +'%'
 });
 
 
